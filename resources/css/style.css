@@ -6,15 +6,19 @@ body{
   font-size: 20px;
   font-weight: 100;
   background: url(./img/hero.jpg);
-  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-h1 ,h2{ font-weight: 100;}
+h1 ,h2{ 
+  font-weight: 100;
+  margin: 40px;
+}
 
 .wrapper{
   background: rgba(255, 255, 255, 0.4);
-  height: 600px;
-  width: 1200px;
+  height: 90%;
+  width: 90%;
   margin: auto;
 }
 
@@ -45,9 +49,13 @@ h1 ,h2{ font-weight: 100;}
 }
 
 input{
-  width: 10%;
-  margin: 0 130px 50px 5px;
+  width: 15%;
+  margin: 0 80px 50px 5px;
   padding: 3px;
+}
+
+.btn{
+  text-align: center;
 }
 
 .check{
@@ -55,13 +63,6 @@ input{
   background: none;
   font-size: 30px;
   font-weight: 300;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 
 .check:hover{
@@ -69,19 +70,37 @@ input{
   cursor: pointer;
 }
 
+.check:focus{
+  outline: none;
+}
+
 .result{
-  /* background: red; */
-  position: absolute;
-  left: 25%;
-  top: 75%;
-  transform: translate(-50% , -50%);
-  -webkit-transform: translate(-50% , -50%);
-  -moz-transform: translate(-50% , -50%);
-  -ms-transform: translate(-50% , -50%);
-  -o-transform: translate(-50% , -50%);
-  font-size: 40px;
-  text-align: right;
+  font-size: 35px;
+  padding-left: 100px;
 }
 .bmi{
-  margin-bottom: 30px;
+  display: flex;
+  display: none;
+  align-items: center;
+}
+
+.mhr{
+  display: flex;
+  display: none;
+  align-items: center;
+}
+
+.calBMI{
+  border-bottom: 2px solid #EDF7A8;
+  padding-bottom: 7px;
+}
+
+.calMHR{
+  border-bottom: 2px solid #EDF7A8;
+  padding-bottom: 5px;
+}
+
+.value{
+  margin-left: auto;
+  margin-right: 50px;
 }
